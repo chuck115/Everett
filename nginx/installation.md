@@ -29,8 +29,8 @@ ln -sf nginx-$nginxVersion nginx
 cd nginx
 
 ./configure \
---user=nginx                          \
---group=nginx                         \
+--user=www-data                          \
+--group=www-data                         \
 --prefix=/etc/nginx                   \
 --sbin-path=/usr/sbin/nginx           \
 --conf-path=/etc/nginx/nginx.conf     \
@@ -58,7 +58,7 @@ make install
 
 ### Running the VPS
 
-1. useradd -r nginx
+1. useradd -r www-data
 1. setup the file /etc/init.d/nginx
 1. chmod +x /etc/init.d/nginx
  
