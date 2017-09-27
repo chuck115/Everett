@@ -75,14 +75,3 @@ mysql>source /home/abc/abc.sql;
 方法二：
 mysql -u用户名 -p密码 数据库名 < 数据库名.sql
 #mysql -uabc_f -p abc < abc.sql
-
-create database spsv2_migration_2017092701 default character set utf8mb4 collate utf8mb4_unicode_ci;
-
-create database spsv1 default character set utf8mb4 collate utf8mb4_unicode_ci;
-
-
-
-
-alter table sps_product modify column product_name varchar(200) not null;
-
-5ZP8lDBvjKQclKHGIwrG
